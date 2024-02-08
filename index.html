@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="">
+    <div class="bg-gray-700 w-[450px] h-[630px] flex justify-center m-3 ml-[100px] rounded-2xl">
+        <form class="" action="#">
+            <input id="display" class="w-[450px] h-[100px] bg-gray-600 text-5xl rounded-t-2xl text-white p-5" readonly>
+        <div class="grid grid-cols-4 gap-4 mt-[30px] ml-[15px]">
+            <input type="button" value="C" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-red-700 text-4xl font-bold cursor-pointer" onclick="display.value =''">
+            <input type="button" value="√" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-green-700 text-5xl font-bold cursor-pointer" onclick="display.value +='√'">
+            <input type="button" value="%" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-green-700 text-5xl font-bold cursor-pointer" onclick="display.value +='%'">
+            <input type="button" value="÷" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-green-700 text-5xl font-bold cursor-pointer" onclick="display.value += '/'">  
+            <input type="button" value="7" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '7'">
+            <input type="button" value="8" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '8'">
+            <input type="button" value="9" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '9'">
+            <input type="button" value="×" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-green-700 text-5xl font-bold cursor-pointer" onclick="display.value += '*'">
+            <input type="button" value="4" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '4'">
+            <input type="button" value="5" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '5'">
+            <input type="button" value="6" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '6'">
+            <input type="button" value="-" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-green-700 text-5xl font-bold cursor-pointer" onclick="display.value += '-'">
+            <input type="button" value="1" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '1'">
+            <input type="button" value="2" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '2'">
+            <input type="button" value="3" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '3'">
+            <input type="button" value="+" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-green-700 text-5xl font-bold cursor-pointer" onclick="display.value += '+'">
+            <input type="button" value="00" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '00'">      
+            <input type="button" value="0" class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value += '0'">
+            <input type="button" value="." class="bg-gray-900 w-[80px] h-[80px] rounded-full text-white text-4xl font-bold cursor-pointer" onclick="display.value +='.'">
+            <input type="button" value="=" class="bg-green-700 w-[80px] h-[80px] rounded-full text-gray-900 text-5xl font-bold cursor-pointer" onclick="calcultate()">
+        </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
